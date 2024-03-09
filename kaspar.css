@@ -33,7 +33,7 @@ ul {
 }
 @font-face {
     font-family: headerFont;
-    src: url(/SYNNova-Regular.otf);
+    src: url(SYNNova-Regular.otf);
 }
 /* start mediaQ */
 /* small */

@@ -40,6 +40,19 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+.scroll-to-top {
+    font-size: 25px;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    background: black;
+    padding: 11px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.scroll-to-top a {
+    color: var(--mainColor);
+}
 @font-face {
     font-family: headerFont;
     src: url(SYNNova-Regular.otf);
@@ -1252,7 +1265,6 @@ header nav .form i {
     font-size: 20px;
     color: black;
     font-family: headerFont;
-
 }
 /* end after-about-image */
 

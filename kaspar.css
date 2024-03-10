@@ -5,6 +5,7 @@
     --secondColor: rgb(15 116 143 / 50%);
     --mainPadding: 100px;
     --main-BKC: #000000eb;
+    --paragraphColor: #777;
 }
 /* end var */
 *{
@@ -24,6 +25,14 @@ body {
 }
 ul {
     list-style: none;
+}
+::before,
+::after {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 .container {
     padding-left: 15px;
@@ -113,7 +122,7 @@ ul {
     margin: 0 auto 100px;
     max-width: 100%;
     line-height: 2;
-    color: #777;
+    color: var(--paragraphColor);
 }
 @keyframes loading {
     from {
@@ -504,7 +513,7 @@ header nav .form i {
 
 }
 .services .srvs-container .srv-box p {
-    color: #777;
+    color: var(--paragraphColor);
     line-height: 2;
     z-index: 2;
 }
@@ -920,4 +929,330 @@ header nav .form i {
     font-size: 14px;
 }
 /* end status */
+/* start skills */
+.skills {
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 150px;
+    flex-wrap: nowrap;
+}
+@media (max-width:1199px) {
+    .skills .container {
+        flex-wrap: wrap;
+    }
+}
+.skills .container .skill {
+    position: relative;
+}
+.skills .container .skill .people-data {
+    transition: 0.3s;
+    border-radius: 15px;
+    padding: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.skills .container .skill .people-data:hover {
+    box-shadow: 15px 15px 30px #9d9d9d, -15px -15px 30px #ffffff0d;
+}
+.skills .container .skill,
+.skills .container .skill-2 {
+    flex-basis: 50%;
+}
+@media (max-width:1198px) {
+    .skills .container .skill,
+    .skills .container .skill-2 {
+        flex-basis: 100%;
+    }
+    .skills .container .skill-2 {
+        margin: 80px 0 0 0;
+    }
+}
+.skills .container .skill .skills-label,
+.skills .container .skill-2 .skills-label  {
+    margin-bottom: 90px;
+    text-align: center;
+}
+.skills .container .skill .skills-label h2,
+.skills .container .skill-2 .skills-label h2  {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 25px;
+}
+.skills .container .skill .skills-label h2 + p,
+.skills .container .skill-2 .skills-label h2 + p {
+    color: var(--paragraphColor);
+    line-height: 2;
+}
+.skills .container .skill .person-one-data {
+    display: flex;
+    align-items: center;
+}
+.skills .container .skill .image {
+    width: 250px;
+}
+.skills .container .skill .image img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.skills .container .skill .person-one-data p {
+    padding: 20px;
+    border-bottom: 1px solid #7777774a;
+    text-transform: capitalize;
+    margin-left: 50px;
+    line-height: 2;
+    color: var(--paragraphColor);
+}
+.skills .container .skill .person-one-data.person-1 {
+    margin-bottom: 50px;
+}
+@media (max-width:501px) {
+    .skills .container .skill .person-one-data {
+        display: flex;
+        flex-direction: column;
+    } 
+    .skills .container .skill .image {
+        width: 120px;
+    }
+    .skills .container .skill .person-one-data p {
+        margin-left: 0;
+    }
+}
+.skills .container .skill .bullets-2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.skills .container .skill .bullets-2 li {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    margin-right: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@media (max-width:767px) {
+    .skills .container .skill .bullets-2 {
+        display: none;
+    }
+}
+.skills .container .skill .bullets-2 li:nth-child(2) {
+    background-color: var(--mainColor);
+}
+.skills .container .skill-2 .skills-list {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.skills .container .skill-2 .skills-list:hover {
+    box-shadow: 15px 15px 30px #9d9d9d, -15px -15px 30px #ffffff0d;
+}
+.skills .container .skill-2 .skills-list div {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 25px;
+}
+.skills .container .skill-2 .skills-list div p {
+    position: absolute;
+    top: -30px;
+    color: #777;
+    font-family: 'headerFont';
+    left: 0;
+    text-transform: uppercase;
+}
+.skills .container .skill-2 .skills-list div:first-child {
+    background-image: linear-gradient(to right, var(--mainColor) 90%, #777 90%)
+}
+.skills .container .skill-2 .skills-list div:first-child::before {
+    content: "90%";
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: var(--paragraphColor);
+    left: calc(90% - 30px);
+    padding: 5px 15px;
+    top: -60px;
+}
+.skills .container .skill-2 .skills-list div:first-child::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    left: calc(90% - 10px);
+    top: -20px;
+}
+.skills .container .skill-2 .skills-list div:nth-child(2) {
+    background-image: linear-gradient(to right, var(--mainColor) 98%, #777 98%)
+}
+.skills .container .skill-2 .skills-list div:nth-child(2)::before {
+    content: "98%";
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: var(--paragraphColor);
+    left: calc(98% - 30px);
+    padding: 5px 15px;
+    top: -60px;
+}
+.skills .container .skill-2 .skills-list div:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    left: calc(98% - 10px);
+    top: -20px;
+}
+.skills .container .skill-2 .skills-list div:nth-child(3) {
+    background-image: linear-gradient(to right, var(--mainColor) 92%, #777 80%)
+}
+.skills .container .skill-2 .skills-list div:nth-child(3)::before {
+    content: "92%";
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: var(--paragraphColor);
+    left: calc(92% - 30px);
+    padding: 5px 15px;
+    top: -60px;
+}
+.skills .container .skill-2 .skills-list div:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    left: calc(92% - 10px);
+    top: -20px;
+}
+.skills .container .skill-2 .skills-list div:last-child {
+    background-image: linear-gradient(to right, var(--mainColor) 70%, #777 70%);
+    margin-bottom: 0;
+}
+.skills .container .skill-2 .skills-list div:last-child::before {
+    content: "70%";
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: var(--paragraphColor);
+    left: calc(70% - 30px);
+    padding: 5px 15px;
+    top: -60px;
+}
+.skills .container .skill-2 .skills-list div:last-child::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: black transparent transparent transparent;
+    left: calc(70% - 10px);
+    top: -20px;
+}
+/* end skills */
+/* start after-about-image */
+.after-about {
+    position: relative;
+    display: flex;
+}
+.after-about-image {
+    min-height: 50vh;
+    width: 100%;
+    background-image: url(after-about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.after-about .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+}
+.after-about .after-about-image .after-about-image-content {
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--secondColor);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.after-about .after-about-image .after-about-image-content h2 {
+    color: black;
+    text-transform: uppercase;
+    font-family: headerFont;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    fw
+}
+@media (max-width:620px) {
+    .after-about .after-about-image .after-about-image-content {
+        font-size: 10px;
+    }
+}
+.after-about .after-about-image .after-about-image-content p {
+    color: white;
+    font-size: 20px;
+    color: black;
+    font-family: headerFont;
+
+}
+/* end after-about-image */
 

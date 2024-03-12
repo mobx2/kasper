@@ -22,7 +22,6 @@ body {
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
     background-color: var(--main-BKC);
-    min-height: 60000px;
 }
 ul {
     list-style: none;

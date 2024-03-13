@@ -1264,6 +1264,12 @@ header nav .form i.fa-search:hover {
     display: flex;
     flex-flow: row wrap;
 }
+.pricing .container .main-h {
+    width: 100%;
+}
+.pricing .container .main-h + p {
+    width: 100%;
+}
 .pricing .container .prices {
     position: relative;
     width: 100%;
@@ -1387,9 +1393,6 @@ header nav .form i.fa-search:hover {
     color: black;
     background-color: var(--mainColor);
 }
-.contact-us .container .form {
-    display: flex;
-    flex-direction: column;
-}
+
 /* end pricing */
 
